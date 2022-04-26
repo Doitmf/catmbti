@@ -14,7 +14,7 @@ const Question = () => {
     { id: "TF", score: 0 },
     { id: "JP", score: 0 }
   ])
-  const navigate = useNavigate
+  const navigate = useNavigate()
   console.log('totalScore', totalScore)
   const handleClickButton = (no, type) => {
     const newScore = totalScore.map((s) => 
@@ -27,7 +27,7 @@ const Question = () => {
       setQuestionNo(questionNo + 1)
     }else {
       //결과 페이지로 이동
-      navigate('./result')
+      navigate('/result')
     }
     setQuestionNo(questionNo + 1)
   }
