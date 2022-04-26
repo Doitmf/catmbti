@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+
 import styled from 'styled-components'
 import { ProgressBar, Button } from 'react-bootstrap'
 import { QuestionData } from '../asset/data/questionData'

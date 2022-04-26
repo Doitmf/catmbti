@@ -1,4 +1,3 @@
-import React, { Component } from 'react'
 //css-in-js
 import styled from 'styled-components'
 import CatImage from '../asset/cat_image.jpg'

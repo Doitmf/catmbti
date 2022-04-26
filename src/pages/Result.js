@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+
 import styled from 'styled-components'
 import CatImage from '../asset/cat_image.jpg'
 import Button from 'react-bootstrap/Button'
