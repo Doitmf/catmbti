@@ -1,7 +1,7 @@
 import React from 'react'
 
 import styled from 'styled-components'
-import CatImage from '../asset/cat_image.jpg'
+
 import Button from 'react-bootstrap/Button'
 import { ResultData } from '../asset/data/resultdata'
 import { useNavigate, useSearchParams } from 'react-router-dom'
