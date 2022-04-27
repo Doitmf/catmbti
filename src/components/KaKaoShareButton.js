@@ -20,8 +20,8 @@ const KaKaoShareButton = ({data}) => {
         description: `예비 집사님이 고양이를 키운다면 가장 잘맞는 고양이는 ${data.name}입니다.`,
         imageUrl: url + data.image,
         link: {
-          mobileWebUrl: 'https://developers.kakao.com',
-          androidExecutionParams: 'test',
+          mobileWebUrl: resultUrl,
+          webUrl: resultUrl
         },
       },
       itemContent: {
