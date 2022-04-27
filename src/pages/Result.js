@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import Button from 'react-bootstrap/Button'
 import { ResultData } from '../asset/data/resultdata'
 import { useNavigate, useSearchParams } from 'react-router-dom'
-import { KakaoShareButton } from '../components/KakaoShareButton'
+import  KakaoShareButton from '../components/KakaoShareButton'
 
 const Result = () => {
   const navigate = useNavigate()
