@@ -7,7 +7,7 @@ const KakaoShareButton = ({ data }) => {
   const resultUrl = window.location.href
   console.log('URL', url, resultUrl)
   React.useEffect(() => {
-    Kakao.cleanup()
+    Kakao.cleanup();
     Kakao.init("	f8e3379f331ddfe1857cc4ac9bab1874")
     console.log(Kakao.isInitialized())
   }, [])
@@ -40,4 +40,4 @@ const KakaoShareButton = ({ data }) => {
   )
 }
 
-export default KakaoShareButton
+export default KakaoShareButton;
