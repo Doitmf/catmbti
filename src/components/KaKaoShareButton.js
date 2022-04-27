@@ -36,7 +36,7 @@ const KaKaoShareButton = ({data}) => {
     })
   }
   return(
-    <KaKaoShareButton>카카오톡 공유하기</KaKaoShareButton>
+    <Button>카카오톡 공유하기</Button>
   )
 }
 export default KaKaoShareButton;
