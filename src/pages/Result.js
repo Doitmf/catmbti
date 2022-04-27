@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import Button from 'react-bootstrap/Button'
 import { ResultData } from '../asset/data/resultdata'
 import { useNavigate, useSearchParams } from 'react-router-dom'
+import KaKaoShareButton  from '../components/KaKaoShareButton'
 
 const Result = () => {
   const navigate = useNavigate()
@@ -16,7 +17,6 @@ const Result = () => {
     setResultData(result)
   },[mbti])
 
-  console.log(resultData)
   return (
     <Wrapper>
       <Header>에비집사 판별기</Header>``
@@ -26,7 +26,10 @@ const Result = () => {
           <img src={resultData.image} className='rounded-circle' width={350} height={350} alt='고양이 로고'></img>
         </LogoImage>
         <Desc className='text-primary'>예비 집사님과 찰떡궁합인 고양이는 {resultData.name}입니다.</Desc>
+        <ButtonGroup>
         <Button onClick={() => navigate('/')}>다시하기</Button>
+        <KaKaoShareButton data={resultData}/>
+        </ButtonGroup>
       </Contents>
     </Wrapper>)
 }
@@ -57,4 +60,8 @@ const Desc = styled.div`
   font-size: 20pt;
   margin-top: 10px
 `
+const ButtonGroup = styled.div`
+  display: flex;
+`
+
 export default Result;
