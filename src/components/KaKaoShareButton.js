@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from 'react-bootstrap';
+import  Button  from 'react-bootstrap';
 const { KaKao } = window
 
 
@@ -10,7 +10,7 @@ const KaKaoShareButton = ({data}) => {
   React.useEffect(() => {
     KaKao.cleanup()
     KaKao.init("f8e3379f331ddfe1857cc4ac9bab1874")
-    console.log(KaKao.isInitialized)
+    console.log(KaKao.isInitialized())
   }, [])
   const shareKakao = () => {
     KaKao.Link.sendDefault({
