@@ -1,4 +1,4 @@
-@font-face{
-  font-family: 'SimKyungha';
-  src: url(./asset/font/SimKyungha.otf);
+@font-face {
+  font-family: "SimKyungha";
+  src: url(/src/asset/font/SimKyungha.ttf)
 }

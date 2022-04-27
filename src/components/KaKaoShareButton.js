@@ -1,19 +1,19 @@
 import React from 'react'
-import  Button  from 'react-bootstrap/Button';
-const { KaKao } = window
+import Button from 'react-bootstrap/Button'
+const { Kakao } = window
 
-
-const KaKaoShareButton = ({data}) => {
-  const url = "https://zingy-vacherin-239277.netlify.app/"
+const KakaoShareButton = ({ data }) => {
+  const url = "https://catmbti27.netlify.app/"
   const resultUrl = window.location.href
-  console.log('url', url, resultUrl)
+  console.log('URL', url, resultUrl)
   React.useEffect(() => {
-    KaKao.cleanup()
-    KaKao.init("f8e3379f331ddfe1857cc4ac9bab1874")
-    console.log(KaKao.isInitialized())
+    Kakao.cleanup()
+    Kakao.init("e5d8cd7b4d69506b5a04e0cd33dc31e8")
+    console.log(Kakao.isInitialized())
   }, [])
+
   const shareKakao = () => {
-    KaKao.Link.sendDefault({
+    Kakao.Link.sendDefault({
       objectType: 'feed',
       content: {
         title: '예비집사 판별기 결과',
@@ -24,19 +24,20 @@ const KaKaoShareButton = ({data}) => {
           webUrl: resultUrl
         },
       },
-      buttons:[
+      buttons: [
         {
-          title:'나도 테스트하러 가기',
+          title: '나도 테스트 하러가기',
           link: {
             mobileWebUrl: url,
             webUrl: url
-          }
+          },
         }
       ]
-    })
+    });
   }
-  return(
-    <Button onClick={shareKakao}>카카오톡 공유하기</Button>
+  return (
+    <Button onClick={shareKakao} style={{ fontFamily: "SimKyungha", marginLeft: "20px" }}>카카오톡 공유하기</Button>
   )
 }
-export default KaKaoShareButton;
+
+export default KakaoShareButton
